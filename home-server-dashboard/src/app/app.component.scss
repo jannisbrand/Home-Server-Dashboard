@@ -1,0 +1,48 @@
+nav {
+  background: lightseagreen;
+  border-radius: 12px;
+  // height: 10%;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: large;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 0;
+  overflow: hidden;
+}
+
+nav a {
+  display: block;
+  width: 60px;
+}
+
+li {
+  position: relative;
+  padding: 15px 0 12px 5px;
+}
+
+nav li {
+  text-align: center;
+}
+
+.nav-left {
+  float: left;
+}
+
+.nav-left ul li {
+  float: left;
+}
+
+.nav-right ul li {
+  float: right;
+}
+
+#main li:hover {
+  position: relative;
+  top: -5px;
+  background-color: lightcoral;
+  border-radius: 12px;
+}

@@ -1,24 +1,22 @@
 import { Component } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { CommonModule } from '@angular/common';
+import { AppRoutingModule } from './app.routes';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    CommonModule,
+    RouterModule,
+    RouterOutlet,
+    NavbarComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'home-server-dashboard';
-  constructor(private router: Router) {
-
-  }
-
-   goToHome() {
-      this.router.navigate(['/']);
-   }
-
-   goToAboutMe() {
-    this.router.navigate(['/', 'about']);
-   }
+  path_image = 'assets/images/logo.jpg';
 }
